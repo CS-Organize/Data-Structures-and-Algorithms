@@ -14,7 +14,7 @@ int main(void)
 		for (int j = 0; word[j + 1] != '\0' ; j++)
 		{
 			++ascii[(int) word[j]];
-			if (ascii[(int) word[j]] != ascii[(int) word[j + 1]] && ascii[(int) word[j + 1]] > 0)
+			if (word[j] != word[j + 1] && ascii[(int) word[j + 1]] > 0)
 			{
 				--cnt;
 				break;
