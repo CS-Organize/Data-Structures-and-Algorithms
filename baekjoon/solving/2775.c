@@ -30,7 +30,7 @@ int main(void)
       {
         printf("%d층 : prevFloor[%d] : %d\n",l,p,prevFloor[p]);
       }
-      
+
     }
     printf("%d\n", prevFloor[n - 1]);
   }
