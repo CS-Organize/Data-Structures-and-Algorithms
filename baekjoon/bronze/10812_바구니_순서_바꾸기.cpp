@@ -6,17 +6,22 @@ int main()
 	short n, m;
 	cin >> n >> m;
 
-	short basket[n + 1], a, b, tmp;
+	short basket[n + 1], start, end, mid, tmp, max = 0;
 	for (short i = 1; i <= n; i++)
 		basket[i] = i;
 	for (short i = 0; i < m; i++)
 	{
-		cin >> a >> b;
-		for (short j = 0; j < (b - a + 1) / 2; j++)
+		cin >> start >> end >> mid;
+		max = 0;
+		for (short j = mid - 1; j >= start; j--)
 		{
-			tmp = basket[a + j];
-			basket[a + j] = basket[b - j];
-			basket[b - j] = tmp;
+			for (short k = j; k < end - max; k++)
+			{
+				tmp = basket[k];
+				basket[k] = basket[k + 1];
+				basket[k + 1] = tmp;
+			}
+			++max;
 		}
 	}
 	for (short i = 1; i <= n; i++)
