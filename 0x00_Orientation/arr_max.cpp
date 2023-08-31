@@ -1,3 +1,5 @@
+// https://blog.encrypted.gg/921
+
 #include <iostream>
 #include <algorithm>
 
