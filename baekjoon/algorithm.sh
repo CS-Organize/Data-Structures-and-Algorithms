@@ -23,11 +23,16 @@ using namespace std;
 
 int\tmain() {
 \tios::sync_with_stdio(false), cin.tie(nullptr);
-
+\t
 \treturn (0);
 }" > "$folder_name.cpp"
 
 # Create the README file
-echo "# $folder_name" > "README.md"
+today_date=$(date +'%Y-%m-%d')
+echo "# $folder_name
+Created on: $today_date
+
+## References
+" > "README.md"
 
 echo "Folder '$folder_name' has been created."
