@@ -29,7 +29,7 @@ int\tmain() {
 
 # Create the README file
 today_date=$(date +'%Y-%m-%d')
-echo "# $folder_name
+echo "# [$folder_name](https://www.acmicpc.net/problem/$folder_name)
 Created on: $today_date
 
 ## References
