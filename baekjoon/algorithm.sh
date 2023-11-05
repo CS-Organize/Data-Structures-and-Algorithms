@@ -24,7 +24,8 @@ using namespace std;
 int\tmain() {
 \tios::sync_with_stdio(false), cin.tie(nullptr);
 \t
-\treturn (0);
+\t
+\treturn 0;
 }" > "$folder_name.cpp"
 
 # Create the README file
