@@ -1,8 +1,6 @@
 # 1715
 Created on: 2023-11-04
 
-- [STL priority_queue](https://travelbeeee.tistory.com/126)
-
 ```cpp
 #include <iostream>
 #include <string>
@@ -78,3 +76,7 @@ Test Case:
 
 Answer:
 24
+
+## References
+
+- [STL priority_queue](https://travelbeeee.tistory.com/126)
