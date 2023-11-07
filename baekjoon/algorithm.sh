@@ -21,7 +21,7 @@ using namespace std;
 
 int\tmain()
 {
-\tios::sync_with_stdio(false), cin.tie(nullptr);
+\tios::sync_with_stdio(false), cin.tie(nullptr), cout.tie(nullptr);
 \t
 \t
 \treturn 0;
