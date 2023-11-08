@@ -16,7 +16,6 @@ cd "$folder_name" || exit 1
 # Create the cpp file
 echo "#include <iostream>
 #include <algorithm>
-#include <vector>
 using namespace std;
 
 int\tmain()
