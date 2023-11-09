@@ -19,9 +19,9 @@ int	main()
 
 	int cnt = 0, x; cin >> x;
 
-	for (int i = 0; i < (x + 1) / 2; i++)
+	for (int i = 1; i < (x + 1) / 2; i++)
 	{
-		if (x - i <= K && occur[i] && occur[x - i] && i != x - i)
+		if (x - i <= K && occur[i] && occur[x - i])
 			++cnt;
 	}
 	cout << cnt << '\n';
