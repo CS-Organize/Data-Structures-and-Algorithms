@@ -14,6 +14,6 @@ int	main()
 	list.traverse();
 	list.erase(0);
 	list.traverse();
-	std::cout << list.size() << '\n';
+	std::cout << list.getSize() << '\n';
 	return 0;
 }
