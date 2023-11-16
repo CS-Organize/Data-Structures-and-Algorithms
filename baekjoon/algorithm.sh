@@ -18,10 +18,13 @@ echo "#include <iostream>
 #include <algorithm>
 using namespace std;
 
-int\tmain()
+#define ll long long
+#define f(i, n) for (int i = 0; i < n; i++)
+
+int\tmain(void)
 {
 \tios::sync_with_stdio(false), cin.tie(nullptr);
-\t
+
 \t
 \treturn 0;
 }" > "$folder_name.cpp"
