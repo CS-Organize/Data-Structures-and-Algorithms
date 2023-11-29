@@ -7,7 +7,7 @@ using namespace std;
 #define ll long long
 #define f(i, n) for (int i = 0; i < n; i++)
 #define COST first
-#define CUR second
+#define DST second
 
 const int MAX_POINT = 20000;
 const int INF = 0x7fffffff;
@@ -27,9 +27,9 @@ int	main(void)
 	// 간선 받기
 	for (int i = 0; i < E; i++)
 	{
-		int src, dst, cost;
-		cin >> src >> dst >> cost;
-		path[src].push_back(make_pair(cost, dst));
+		int src, node, cost;
+		cin >> src >> node >> cost;
+		path[src].push_back({cost, node});
 	}
 
 	// 무한대로 초기화
@@ -44,18 +44,18 @@ int	main(void)
 
 	while (!pq.empty())
 	{
-		int cost = pq.top().COST;
-		int cur = pq.top().CUR;
+		int cur = pq.top().DST;
 		pq.pop();
 
-		if (bestPath[cur] != cost)
-			continue;
+		// 현재 노드에서 갈 수 있는 경로 순회
 		for(size_t i = 0; i < path[cur].size(); i++)
 		{
-			if (bestPath[path[cur][i].CUR] < bestPath[cur] + path[cur][i].COST)
+			// 이전에 구했던 경로가 갱신해주려는 경로보다 작다면 패스
+			if (bestPath[path[cur][i].DST] < bestPath[cur] + path[cur][i].COST)
 				continue;
-			bestPath[path[cur][i].CUR] = bestPath[cur] + path[cur][i].COST;
-			pq.push({bestPath[path[cur][i].CUR], path[cur][i].CUR});
+			// 아니라면 bestPath 갱신하고 큐에 해당 노드 푸쉬
+			bestPath[path[cur][i].DST] = bestPath[cur] + path[cur][i].COST;
+			pq.push({bestPath[path[cur][i].DST], path[cur][i].DST});
 		}
 	}
 
