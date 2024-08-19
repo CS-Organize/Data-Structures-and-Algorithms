@@ -1,16 +1,13 @@
 # Data-Structures-and-Algorithms
 
-##  Must-have abilities
-- Background knowledge
-- Problem-solving skills
-- realization power
+## Tips for using C++ in PS
 
-## One chapter a day
-- [barking dog](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C/%EC%8B%A4%EC%A0%84%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98?page=2)
-- [barking dog repo](https://github.com/encrypted-def/basic-algo-lecture)
+### I/O
 
-## Algorithm
-- [BOJ](https://www.acmicpc.net/)
-- [Programmers](https://programmers.co.kr/learn/challenges?tab=all_challenges)
-- [SW Expert Academy](https://swexpertacademy.com/main/main.do)
-- [goormlevel](https://level.goorm.io/)
+- [ios::sync_with_stdio(false), cin.tie(NULL)](md/cpp-io-00.md)
+- [input function in C++](md/cpp-io-01.md)
+- [parse input](md/cpp-io-02.md)
+
+## Data Structures
+
+## Algorithms
